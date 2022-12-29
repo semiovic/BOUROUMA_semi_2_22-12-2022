@@ -42,3 +42,40 @@ nav a:hover {
     padding: 0 2rem;
 }
 
+/* SEARCH-BAR */
+
+.search-form {
+display: flex;
+}
+
+.search-form button {
+    color: white;
+    background-color: #0065fc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    border: none;
+}
+i {
+    padding: 1rem 1.2rem;
+    background-color: lightgray;
+    border-radius: 1rem 0 0 1rem; 
+}
+
+.search-form input {
+    flex-basis: 12rem;
+    padding-left: 1rem;
+    border: 1px solid lightgray;
+}
+
+.search-form input::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.search-form i {
+    display: flex;
+    align-items: center;
+}
+
