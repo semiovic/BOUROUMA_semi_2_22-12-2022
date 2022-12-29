@@ -1,0 +1,44 @@
+
+
+
+/* WILDCARD */
+*{
+ 
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    }
+
+
+nav {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 20px;
+
+}
+
+nav a:hover {
+    border-top: 2px solid #0065fc
+}
+
+.signup {
+    font-weight: bold;
+    color: #0065fc;
+}
+
+@media (max-width: 600px) {
+
+    }
+
+.wrapper {
+    padding: 0 2rem;
+}
+
