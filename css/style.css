@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
 
 
 /* WILDCARD */
 *{
- 
+    box-sizing: border-box;
+    font-family: "Raleway", "sans serif";
 }
 
 
@@ -14,15 +15,14 @@ a {
 
 
 nav {
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 20px;
 }
 
 nav a {
     padding: 20px;
-
 }
 
 nav a:hover {
@@ -35,7 +35,6 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
-
     }
 
 .wrapper {
@@ -59,11 +58,7 @@ display: flex;
     opacity: 0.9;
     transition: transform 300ms;
 }
-i {
-    padding: 1rem 1.2rem;
-    background-color: lightgray;
-    border-radius: 1rem 0 0 1rem; 
-}
+
 
 .search-form input {
     flex-basis: 12rem;
@@ -79,9 +74,81 @@ i {
 .search-form i {
     display: flex;
     align-items: center;
+    padding: 1rem 1.2rem;
+    background-color: lightgray;
+    border-radius: 1rem 0 0 1rem; 
 }
 
 .search-form button:hover {
     opacity: 1;
     transform: scale(1.02);
+}
+
+/* FILTERS */
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+.filter i {
+    color: blue;
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -3px;
+}
+
+.filter {
+    border: 2px solid lightgray;
+    border-radius: 32px;
+}
+
+.filter span {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* RESULT MESSAGE */
+
+.results-message {
+    display: flex;
+    align-items: center;
+    margin-right: 30rem;
+}
+
+.results-message i {
+    color: #0065fc;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+/* APPARTMENT LIST */
+
+.appartment-list {
+display: flex;
+gap: 1rem;
+}
+
+.appartment-list div {
+    border: 1px solid red;
+    background-color: grey;
+}
+
+.city {
+    flex-basis: 66%;
+}
+
+.popular {
+    flex-basis: 33%;
 }
