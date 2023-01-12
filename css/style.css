@@ -157,16 +157,16 @@ nav a:hover {
 
 /* IMPOSSIBLE DE BACKGROUND */
 .card_hebergement {
-    border: red solid 2px;
+    box-shadow: 3px 3px 3px gray;
     width: 30%;
     background-color: white;
 }
 
 .card_hebergement img {
-    width: 16rem;
+    width: 16.35rem;
     border-radius: 16px 16px 0px 0px;
     height: 8rem;
-    padding: 2%;
+    padding: 1%;
 }
 
 .cards_marseille {
@@ -186,31 +186,47 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
+    margin-top: 16px;
 }
 
 /* GROS PROBLEME  */
 
 .card_popular_in {
-    border: red solid 2px;
+    box-shadow: 3px 3px 3px grey;
     background-color: white;
-    width: 40%;
+    width: 80%;
+    height: 9rem;
     display: flex;
-    line-height: 16px;
-
+    line-height: 5px;
 }
 
 .card_popular_in img {
     width: 8rem;
-    height: 8rem;
+    height: 8.7rem;
     border-radius: 16px 0 0 16px;
-    
+    padding: 1%;
 }
+
+.stars {
+    margin-top: 4rem;
+}
+
+.text_popular {
+
+}
+
+.test {
+   
+    
+
+
+}
+
 
 /* MARSEILLE ACTIVITY */
 
 .activity_picture {
-    border: red solid 2px;
     display: flex;
     gap: 16px;
 }
@@ -223,7 +239,6 @@ nav a:hover {
 }
 
 .activity_picture div {
-    border: red solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,15 +250,16 @@ nav a:hover {
 /* BOTTOM  */
 
 .bottom {
-    border: red solid 2px;
     background-color: #d9d9d9;
     display: flex;
-    gap: 20rem;
-    margin-left: 5rem;
+    gap: 12rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
 }
 
-.test {
-    border: red solid 2px;
+.text_bottom {
+    margin-left: 12rem;
 }
 
 
