@@ -2,7 +2,7 @@
 
 
 /* WILDCARD */
-*{
+* {
     box-sizing: border-box;
     font-family: "Raleway", "sans serif";
 }
@@ -11,7 +11,7 @@
 a {
     text-decoration: none;
     color: black;
-    }
+}
 
 
 nav {
@@ -34,8 +34,7 @@ nav a:hover {
     color: #0065fc;
 }
 
-@media (max-width: 600px) {
-    }
+@media (max-width: 600px) {}
 
 .wrapper {
     padding: 0 2rem;
@@ -44,7 +43,7 @@ nav a:hover {
 /* SEARCH-BAR */
 
 .search-form {
-display: flex;
+    display: flex;
 }
 
 .search-form button {
@@ -61,7 +60,7 @@ display: flex;
 
 
 .search-form input {
-    flex-basis: 12rem;
+    padding-right: 2rem;
     padding-left: 1rem;
     border: 1px solid lightgray;
 }
@@ -76,7 +75,7 @@ display: flex;
     align-items: center;
     padding: 1rem 1.2rem;
     background-color: lightgray;
-    border-radius: 1rem 0 0 1rem; 
+    border-radius: 1rem 0 0 1rem;
 }
 
 .search-form button:hover {
@@ -90,7 +89,6 @@ display: flex;
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
@@ -118,7 +116,6 @@ display: flex;
 .results-message {
     display: flex;
     align-items: center;
-    margin-right: 30rem;
 }
 
 .results-message i {
@@ -136,19 +133,111 @@ display: flex;
 /* APPARTMENT LIST */
 
 .appartment-list {
-display: flex;
-gap: 1rem;
+    display: flex;
+    gap: 5rem;
 }
 
 .appartment-list div {
-    border: 1px solid red;
-    background-color: grey;
+    background-color: #d9d9d9;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .city {
-    flex-basis: 66%;
+    width: 66%;
+    padding: 16px;
 }
 
 .popular {
-    flex-basis: 33%;
+    width: 33%;
+    padding: 16px;
+}
+
+/* APPARTEMENT CARDS */
+
+/* IMPOSSIBLE DE BACKGROUND */
+.card_hebergement {
+    border: red solid 2px;
+    width: 30%;
+}
+
+.card_hebergement img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.cards_marseille {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.cards_popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* GROS PROBLEME  */
+
+.card_popular_in {
+    border: red solid 2px;
+    background-color: azure;
+    width: 40%;
+    display: flex;
+}
+
+.card_popular_in img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+/* MARSEILLE ACTIVITY */
+
+.activity_picture {
+    border: red solid 2px;
+    display: flex;
+    gap: 16px;
+}
+
+.activity_picture img {
+    width: 100%;
+    overflow: hidden;
+    height: 80%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.activity_picture div {
+    border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border-radius: 16px 16px 16px 16px;
+}
+
+
+/* BOTTOM  */
+
+.bottom {
+    border: red solid 2px;
+    background-color: #d9d9d9;
+    display: flex;
+    gap: 20rem;
+    margin-left: 5rem;
+}
+
+.test {
+    border: red solid 2px;
+}
+
+/* RACCOURCI BONUS */
+
+.blue_stars {
+    color: #0065fc;
+}
+
+.grey_stars {
+    color: #d9d9d9;
 }
