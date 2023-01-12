@@ -142,15 +142,27 @@ nav a:hover {
 }
 
 .city {
-    background-color: #d9d9d9;
+    background-color: #F2F2F2;
     width: 66%;
     padding: 16px;
+    margin-bottom: 3rem;
 }
 
 .popular {
-    background-color: #d9d9d9;
+    background-color: #F2F2F2;
     width: 33%;
     padding: 16px;
+    margin-bottom: 3rem;
+}
+
+.best_popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best_popular i {
+    color: #0065fc;
 }
 
 /* APPARTEMENT CARDS */
@@ -216,25 +228,21 @@ nav a:hover {
 
 }
 
-.test {
    
-    
-
-
-}
 
 
 /* MARSEILLE ACTIVITY */
 
 .activity_picture {
     display: flex;
-    gap: 16px;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .activity_picture img {
     width: 100%;
     overflow: hidden;
-    height: 80%;
+    height: 90%;
     border-radius: 16px 16px 0px 0px;
 }
 
@@ -244,13 +252,15 @@ nav a:hover {
     align-items: center;
     width: 25%;
     border-radius: 16px 16px 16px 16px;
+    box-shadow: 3px 3px 3px grey;
+    height: 28rem;
 }
 
 
 /* BOTTOM  */
 
 .bottom {
-    background-color: #d9d9d9;
+    background-color: #F2F2F2;
     display: flex;
     gap: 12rem;
     margin-left: 2rem;
@@ -259,7 +269,7 @@ nav a:hover {
 }
 
 .text_bottom {
-    margin-left: 12rem;
+    margin-left: 7rem;
 }
 
 
