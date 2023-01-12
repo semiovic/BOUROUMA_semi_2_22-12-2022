@@ -138,16 +138,17 @@ nav a:hover {
 }
 
 .appartment-list div {
-    background-color: #d9d9d9;
     border-radius: 16px 16px 16px 16px;
 }
 
 .city {
+    background-color: #d9d9d9;
     width: 66%;
     padding: 16px;
 }
 
 .popular {
+    background-color: #d9d9d9;
     width: 33%;
     padding: 16px;
 }
@@ -158,11 +159,14 @@ nav a:hover {
 .card_hebergement {
     border: red solid 2px;
     width: 30%;
+    background-color: white;
 }
 
 .card_hebergement img {
-    width: 100%;
+    width: 16rem;
     border-radius: 16px 16px 0px 0px;
+    height: 8rem;
+    padding: 2%;
 }
 
 .cards_marseille {
@@ -170,6 +174,12 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
+}
+
+.text_hebergement {
+    margin-left: 16px;
+    line-height: 5px;
+    margin-bottom: 16px;
 }
 
 .cards_popular {
@@ -183,14 +193,18 @@ nav a:hover {
 
 .card_popular_in {
     border: red solid 2px;
-    background-color: azure;
+    background-color: white;
     width: 40%;
     display: flex;
+    line-height: 16px;
+
 }
 
 .card_popular_in img {
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 16px 0 0 16px;
+    
 }
 
 /* MARSEILLE ACTIVITY */
@@ -231,6 +245,8 @@ nav a:hover {
 .test {
     border: red solid 2px;
 }
+
+
 
 /* RACCOURCI BONUS */
 
