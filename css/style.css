@@ -324,7 +324,11 @@ nav a:hover {
     .popular {
         width: 100%;
         
-        
+}
+
+.cards_popular {
+    display: flex;
+    flex-direction: row;
 }
 
 .activity_picture {
