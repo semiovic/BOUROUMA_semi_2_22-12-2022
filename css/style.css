@@ -167,7 +167,7 @@ nav a:hover {
 
 /* APPARTEMENT CARDS */
 
-/* IMPOSSIBLE DE BACKGROUND */
+
 .card_hebergement {
     box-shadow: 3px 3px 3px gray;
     width: 30%;
@@ -205,7 +205,6 @@ nav a:hover {
     margin-top: 16px;
 }
 
-/* GROS PROBLEME  */
 
 .card_popular_in {
     box-shadow: 3px 3px 3px grey;
@@ -222,7 +221,8 @@ nav a:hover {
 
 }
 
-.card_popular_in h4, .card_popular_in p {
+.card_popular_in h4,
+.card_popular_in p {
     margin-block: 0.8rem;
 }
 
@@ -248,11 +248,9 @@ nav a:hover {
     margin-top: 4rem;
 }
 
-.text_popular {
+.text_popular {}
 
-}
 
-   
 
 
 /* MARSEILLE ACTIVITY */
@@ -290,7 +288,7 @@ nav a:hover {
     gap: 12rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    
+
 }
 
 .text_bottom {
@@ -317,103 +315,261 @@ nav a:hover {
         flex-wrap: wrap;
         width: 100%;
     }
+
     .city {
         width: 100%;
     }
 
     .popular {
         width: 100%;
-        
-}
 
-.cards_popular {
-    display: flex;
-    flex-direction: row;
-}
+    }
 
-.activity_picture {
-    width: 100%;
-}
+    .cards_popular {
+        display: flex;
+        flex-direction: row;
+    }
 
-.activity_picture img {
-    object-fit: cover;
-}
-    
+    .activity_picture {
+        width: 100%;
+    }
 
-/* FILTER RESPONSIV */
-
-.filter-list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
-    height: 80%;
-}
+    .activity_picture img {
+        object-fit: cover;
+    }
 
 
-.filter i {
-    color: blue;
-    background-color: lightblue;
-    padding: 1rem;
-    border-radius: 50%;
-    
-}
+    /* FILTER RESPONSIV */
 
-.filter {
-    border: 2px solid lightgray;
-    border-radius: 32px;
-}
-
-/* TEST POPULAR RESPONSIVE */
-
-.card_popular_in {
-    box-shadow: 3px 3px 3px grey;
-    background-color: white;
-    width: 85%;
-    display: flex;
-}
-
-.card_popular_in_solo {
-    box-shadow: 3px 3px 3px grey;
-    background-color: white;
-    width: 85%;
-    display: flex;
-
-}
-
-.card_popular_in h4, .card_popular_in p {
-    margin-block: 0.8rem;
-}
-
-.card_popular_in img {
-    width: 45%;
-    border-radius: 16px 0 0 16px;
-    padding: 4px;
-    object-fit: cover;
-    margin-right: 4%;
-}
-
-.card_popular_in_solo img {
-    width: 45%;
-    border-radius: 16px 0 0 16px;
-    padding: 4px;
-    object-fit: cover;
-    margin-right: 4%;
-
-}
+    .filter-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+        height: 80%;
+    }
 
 
-.stars {
-    margin-top: 4rem;
-}
+    .filter i {
+        color: blue;
+        background-color: lightblue;
+        padding: 1rem;
+        border-radius: 50%;
+
+    }
+
+    .filter {
+        border: 2px solid lightgray;
+        border-radius: 32px;
+    }
+
+    /* TEST POPULAR RESPONSIVE */
+
+    .card_popular_in {
+        box-shadow: 3px 3px 3px grey;
+        background-color: white;
+        width: 85%;
+        display: flex;
+    }
+
+    .card_popular_in_solo {
+        box-shadow: 3px 3px 3px grey;
+        background-color: white;
+        width: 85%;
+        display: flex;
+
+    }
+
+    .card_popular_in h4,
+    .card_popular_in p {
+        margin-block: 0.8rem;
+    }
+
+    .card_popular_in img {
+        width: 45%;
+        border-radius: 16px 0 0 16px;
+        padding: 4px;
+        object-fit: cover;
+        margin-right: 4%;
+    }
+
+    .card_popular_in_solo img {
+        width: 45%;
+        border-radius: 16px 0 0 16px;
+        padding: 4px;
+        object-fit: cover;
+        margin-right: 4%;
+
+    }
 
 
-
-
-
-
+    .stars {
+        margin-top: 4rem;
+    }
 
 
 }
-    
+
+/* RESPONSIVE PHONE */
+
+@media screen and (max-width: 600px) {
+
+    /* FILTRE */
+
+    .filter-list {
+        border: red solid;
+    }
+
+    /* MOST POPULAR */
+
+    .popular {
+        background-color: #F2F2F2;
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 3rem;
+    }
+
+    .best_popular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .cards_popular {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .best_popular i {
+        color: #0065fc;
+    }
+
+    .card_popular_in {
+        box-shadow: 3px 3px 3px grey;
+        background-color: white;
+        width: 100%;
+
+
+    }
+
+    .card_popular_in_solo {
+        box-shadow: 3px 3px 3px grey;
+        background-color: white;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .card_popular_in h4,
+    .card_popular_in p {
+        margin-block: 0.8rem;
+    }
+
+    .card_popular_in img {
+        width: 45%;
+        border-radius: 16px 0 0 16px;
+        padding: 4px;
+        object-fit: cover;
+        margin-right: 4%;
+    }
+
+    .card_popular_in_solo img {
+        width: 45%;
+        border-radius: 16px 0 0 16px;
+        padding: 4px;
+        object-fit: cover;
+        margin-right: 4%;
+
+    }
+
+
+    .stars {
+        margin-top: 4rem;
+    }
+
+
+    /* HEBERGEMENT MARSEILLE */
+
+
+
+    .card_hebergement {
+        box-shadow: 3px 3px 3px gray;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card_hebergement img {
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+        height: 8rem;
+        padding: 1%;
+    }
+
+    .cards_marseille {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .appartment-list div {
+        border-radius: 16px 16px 16px 16px;
+    }
+
+    .city {
+        background-color: #F2F2F2;
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 3rem;
+    }
+
+    /* MARSEILLE ACTIVITY */
+
+    .activity_picture {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .activity_picture img {
+        width: 100%;
+        overflow: hidden;
+        height: 80%;
+        border-radius: 16px 16px 0px 0px;
+        object-fit: cover;
+    }
+
+    .activity_picture div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 16px 16px 16px 16px;
+        box-shadow: 3px 3px 3px grey;
+        height: 15rem;
+    }
+
+    /* BOTTOM */
+
+    .bottom {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+    }
+
+
+
+
+
+}
