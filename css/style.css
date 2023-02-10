@@ -7,12 +7,16 @@
     font-family: "Raleway", "sans serif";
 }
 
+body {
+    margin: 0;
+}
 
 a {
     text-decoration: none;
     color: black;
 }
 
+/* NAV BAR */
 
 nav {
     display: flex;
@@ -34,7 +38,6 @@ nav a:hover {
     color: #0065fc;
 }
 
-@media (max-width: 600px) {}
 
 .wrapper {
     padding: 0 2rem;
@@ -95,7 +98,6 @@ nav a:hover {
 
 .filter i {
     color: blue;
-    background-color: lightblue;
     padding: 1rem;
     border-radius: 50%;
     margin: -3px;
@@ -104,6 +106,8 @@ nav a:hover {
 .filter {
     border: 2px solid lightgray;
     border-radius: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .filter span {
@@ -221,7 +225,6 @@ nav a:hover {
 
 }
 
-.card_popular_in h4,
 .card_popular_in p {
     margin-block: 0.8rem;
 }
@@ -247,8 +250,6 @@ nav a:hover {
 .stars {
     margin-top: 4rem;
 }
-
-.text_popular {}
 
 
 
@@ -307,6 +308,11 @@ nav a:hover {
     color: #d9d9d9;
 }
 
+.img {
+    object-fit: cover;
+}
+
+
 /* RESPONSIV TABLETTE */
 
 @media screen and (max-width: 991px) {
@@ -342,27 +348,10 @@ nav a:hover {
     /* FILTER RESPONSIV */
 
     .filter-list {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-        height: 80%;
-    }
-
-
-    .filter i {
-        color: blue;
-        background-color: lightblue;
-        padding: 1rem;
-        border-radius: 50%;
+        font-size: small;
 
     }
 
-    .filter {
-        border: 2px solid lightgray;
-        border-radius: 32px;
-    }
 
     /* TEST POPULAR RESPONSIVE */
 
@@ -370,6 +359,7 @@ nav a:hover {
         box-shadow: 3px 3px 3px grey;
         background-color: white;
         width: 85%;
+        height: 10rem;
         display: flex;
     }
 
@@ -377,11 +367,12 @@ nav a:hover {
         box-shadow: 3px 3px 3px grey;
         background-color: white;
         width: 85%;
-        display: flex;
+        height: 10rem;
+       display: flex;
 
     }
 
-    .card_popular_in h4,
+
     .card_popular_in p {
         margin-block: 0.8rem;
     }
@@ -403,10 +394,28 @@ nav a:hover {
 
     }
 
+/* MARSEILLE ACTIVITY */
 
-    .stars {
-        margin-top: 4rem;
-    }
+.activity_picture div {
+    height: 15rem;
+}
+
+/* BOTTOM */
+
+.bottom {
+    background-color: #F2F2F2;
+    display: flex;
+    gap: 12rem;
+    margin-left: 2rem;
+    margin-right: 15rem;
+
+}
+
+.text_bottom {
+    margin-left: 0rem;
+    display: block;
+
+}
 
 
 }
@@ -415,11 +424,43 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
 
+
+    /* NAV BAR */
+
+    nav {
+        display: block;
+    }
+
+    nav img {
+        margin-left: 35%;
+        margin-bottom: 3rem;
+    }
+
+
+    nav a:hover {
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    /* SEARCH BAR */
+
+
+
     /* FILTRE */
 
     .filter-list {
-        border: red solid;
+        display: block;
+        width: 50%;
     }
+
+    .filter {
+        font-size: small;
+    }
+
 
     /* MOST POPULAR */
 
@@ -533,6 +574,7 @@ nav a:hover {
     .activity_picture {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         gap: 2rem;
         margin-bottom: 3rem;
     }
@@ -548,7 +590,6 @@ nav a:hover {
     .activity_picture div {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         border-radius: 16px 16px 16px 16px;
         box-shadow: 3px 3px 3px grey;
@@ -559,9 +600,7 @@ nav a:hover {
 
     .bottom {
         background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
         gap: 12rem;
         margin-left: 2rem;
         margin-right: 2rem;
