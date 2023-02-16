@@ -7,6 +7,21 @@
     font-family: "Raleway", "sans serif";
 }
 
+/* RACCOURCI BONUS */
+ 
+
+.blue_stars {
+    color: #0065fc;
+}
+
+.grey_stars {
+    color: #d9d9d9;
+}
+
+.img {
+    object-fit: cover;
+}
+
 body {
     margin: 0;
 }
@@ -71,7 +86,6 @@ nav a:hover {
     padding: 1rem 1.2rem;
     background-color: lightgray;
     border-radius: 1rem 0 0 1rem;
-
 }
 
 .search-form input {
@@ -163,7 +177,6 @@ nav a:hover {
     width: 66%;
     padding: 16px;
     margin-bottom: 3rem;
-
 }
 
 .popular {
@@ -183,6 +196,7 @@ nav a:hover {
     color: #0065fc;
 }
 
+
 /* APPARTEMENT CARDS */
 
 
@@ -192,7 +206,6 @@ nav a:hover {
     background-color: white;
     display: flex;
     flex-direction: column;
-
 }
 
 .card_hebergement img {
@@ -211,14 +224,11 @@ nav a:hover {
 
 .text_popular {
     margin-bottom: 3%;
-
 }
-
 
 .text_hebergement {
     margin-left: 16px;
     margin-bottom: 16px;
-
 }
 
 .cards_popular {
@@ -242,7 +252,6 @@ nav a:hover {
     background-color: white;
     width: 85%;
     display: flex;
-
 }
 
 .card_popular_in p {
@@ -263,10 +272,7 @@ nav a:hover {
     padding: 4px;
     object-fit: cover;
     margin-right: 4%;
-
 }
-
-
 
 /* MARSEILLE ACTIVITY */
 
@@ -299,6 +305,7 @@ nav a:hover {
 
 /* BOTTOM  */
 
+
 .bottom {
     background-color: #F2F2F2;
     display: flex;
@@ -313,25 +320,10 @@ nav a:hover {
 
 
 
-/* RACCOURCI BONUS */
-
-.blue_stars {
-    color: #0065fc;
-}
-
-.grey_stars {
-    color: #d9d9d9;
-}
-
-.img {
-    object-fit: cover;
-}
-
-
 /* RESPONSIV TABLETTE */
 
-@media screen and (max-width: 991px) {
 
+@media screen and (max-width: 991px) {
 
 
     /* FILTER RESPONSIV */
@@ -360,7 +352,6 @@ nav a:hover {
 
     .popular {
         width: 100%;
-
     }
 
     .cards_popular {
@@ -371,7 +362,6 @@ nav a:hover {
     .activity_picture {
         width: 100%;
     }
-
 
 
     /* MOST POPULAR */
@@ -391,7 +381,6 @@ nav a:hover {
         width: 85%;
         height: 10rem;
         display: flex;
-
     }
 
 
@@ -413,7 +402,6 @@ nav a:hover {
         padding: 4px;
         object-fit: cover;
         margin-right: 4%;
-
     }
 
     .text_popular {
@@ -454,10 +442,9 @@ nav a:hover {
 
     .text_bottom {
         margin: 0%;
-
     }
-
 }
+
 
 /* RESPONSIVE PHONE */
 
@@ -474,7 +461,6 @@ nav a:hover {
         display: flex;
         margin: auto;
         margin-bottom: 10%;
-
     }
 
     nav div {
@@ -493,7 +479,9 @@ nav a:hover {
         font-size: 20px;
     }
 
+
     /* SEARCH BAR */
+
 
     #search-button {
         visibility: hidden;
@@ -527,7 +515,6 @@ nav a:hover {
 
     .filter span {
         padding: 0%;
-
     }
 
     .filter {
@@ -539,6 +526,7 @@ nav a:hover {
 
     /* RESULTE MSG */
 
+
     .results-message {
         margin-bottom: 5%;
         margin-top: 10%;
@@ -548,20 +536,16 @@ nav a:hover {
     /* MOST POPULAR */
 
 
-
     .cards_popular {
         display: flex;
         flex-direction: column;
     }
 
 
-
     .card_popular_in {
         box-shadow: 3px 3px 3px grey;
         background-color: white;
         width: 100%;
-
-
     }
 
     .card_popular_in_solo {
@@ -569,10 +553,7 @@ nav a:hover {
         background-color: white;
         width: 100%;
         display: flex;
-
     }
-
-
 
 
     /* HEBERGEMENT MARSEILLE */
@@ -585,7 +566,6 @@ nav a:hover {
         background-color: white;
         display: flex;
         flex-direction: column;
-
     }
 
     .city {
@@ -593,9 +573,8 @@ nav a:hover {
     }
 
 
-
-
     /* MARSEILLE ACTIVITY */
+
 
     .activity_picture {
         display: flex;
@@ -622,6 +601,7 @@ nav a:hover {
         height: 15rem;
     }
 
+
     /* BOTTOM */
 
     .bottom {
@@ -630,10 +610,7 @@ nav a:hover {
         gap: 12rem;
         margin-left: 2rem;
         margin-right: 2rem;
-
     }
-
-
 
 
 
