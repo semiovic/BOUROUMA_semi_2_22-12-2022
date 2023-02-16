@@ -61,6 +61,18 @@ nav a:hover {
     transition: transform 300ms;
 }
 
+#search-icon2 {
+    visibility: hidden;
+}
+
+#search-icon1 {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    background-color: lightgray;
+    border-radius: 1rem 0 0 1rem;
+
+}
 
 .search-form input {
     padding-right: 2rem;
@@ -73,13 +85,6 @@ nav a:hover {
     font-size: 1rem;
 }
 
-.search-form i {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.2rem;
-    background-color: lightgray;
-    border-radius: 1rem 0 0 1rem;
-}
 
 .search-form button:hover {
     opacity: 1;
@@ -93,6 +98,7 @@ nav a:hover {
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 
@@ -141,6 +147,13 @@ nav a:hover {
     gap: 5rem;
 }
 
+.text_hebergement {
+    padding: auto;
+    margin: auto;
+    line-height: 1px;
+}
+
+
 .appartment-list div {
     border-radius: 16px 16px 16px 16px;
 }
@@ -150,6 +163,7 @@ nav a:hover {
     width: 66%;
     padding: 16px;
     margin-bottom: 3rem;
+
 }
 
 .popular {
@@ -194,6 +208,12 @@ nav a:hover {
     gap: 16px;
     justify-content: center;
 }
+
+.text_popular {
+    margin-bottom: 3%;
+
+}
+
 
 .text_hebergement {
     margin-left: 16px;
@@ -247,14 +267,9 @@ nav a:hover {
 }
 
 
-.stars {
-    margin-top: 4rem;
-}
-
-
-
 
 /* MARSEILLE ACTIVITY */
+
 
 .activity_picture {
     display: flex;
@@ -278,6 +293,7 @@ nav a:hover {
     border-radius: 16px 16px 16px 16px;
     box-shadow: 3px 3px 3px grey;
     height: 28rem;
+    font-weight: bold;
 }
 
 
@@ -287,9 +303,8 @@ nav a:hover {
     background-color: #F2F2F2;
     display: flex;
     gap: 12rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .text_bottom {
@@ -317,6 +332,23 @@ nav a:hover {
 
 @media screen and (max-width: 991px) {
 
+
+
+    /* FILTER RESPONSIV */
+
+    .filter-list {
+        font-size: small;
+    }
+
+    .filter span {
+        padding: 0%;
+        margin-right: 16px;
+    }
+
+
+    /* HEBERGEMENT MARSEILLE */
+
+
     .appartment-list {
         flex-wrap: wrap;
         width: 100%;
@@ -340,20 +372,10 @@ nav a:hover {
         width: 100%;
     }
 
-    .activity_picture img {
-        object-fit: cover;
-    }
 
 
-    /* FILTER RESPONSIV */
+    /* MOST POPULAR */
 
-    .filter-list {
-        font-size: small;
-
-    }
-
-
-    /* TEST POPULAR RESPONSIVE */
 
     .card_popular_in {
         box-shadow: 3px 3px 3px grey;
@@ -368,7 +390,7 @@ nav a:hover {
         background-color: white;
         width: 85%;
         height: 10rem;
-       display: flex;
+        display: flex;
 
     }
 
@@ -394,29 +416,46 @@ nav a:hover {
 
     }
 
-/* MARSEILLE ACTIVITY */
+    .text_popular {
+        font-size: small;
+    }
 
-.activity_picture div {
-    height: 15rem;
-}
+    .stars {
+        margin-top: 30%;
+    }
 
-/* BOTTOM */
+    .stars2 {
+        margin-top: 20%;
+    }
 
-.bottom {
-    background-color: #F2F2F2;
-    display: flex;
-    gap: 12rem;
-    margin-left: 2rem;
-    margin-right: 15rem;
+    .stars3 {
+        margin-top: 30%;
+    }
 
-}
+    /* MARSEILLE ACTIVITY */
 
-.text_bottom {
-    margin-left: 0rem;
-    display: block;
+    /* BESOIN D'AIDE IMAGE PAS DE LA MEME TAILLE A CAUSE DES DOUBLE LIGNES TEXT.. */
 
-}
+    .activity_picture div {
+        height: 15rem;
+        font-size: smaller;
+    }
 
+
+    /* BOTTOM */
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+        gap: 5rem;
+        margin-right: 3%;
+    }
+
+    .text_bottom {
+        margin: 0%;
+
+    }
 
 }
 
@@ -432,8 +471,16 @@ nav a:hover {
     }
 
     nav img {
-        margin-left: 35%;
-        margin-bottom: 3rem;
+        display: flex;
+        margin: auto;
+        margin-bottom: 10%;
+
+    }
+
+    nav div {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
     }
 
 
@@ -448,44 +495,66 @@ nav a:hover {
 
     /* SEARCH BAR */
 
+    #search-button {
+        visibility: hidden;
+        display: none;
+    }
+
+    #search-icon2 {
+        visibility: visible;
+        color: white;
+        background-color: #0065fc;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem;
+        display: flex;
+    }
+
 
 
     /* FILTRE */
 
+
     .filter-list {
-        display: block;
-        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+
+    .filter span {
+        padding: 0%;
+
     }
 
     .filter {
-        font-size: small;
+        width: 45%;
+        width: calc(50%-10px);
+        font-size: smaller;
+    }
+
+
+    /* RESULTE MSG */
+
+    .results-message {
+        margin-bottom: 5%;
+        margin-top: 10%;
     }
 
 
     /* MOST POPULAR */
 
-    .popular {
-        background-color: #F2F2F2;
-        width: 100%;
-        padding: 16px;
-        margin-bottom: 3rem;
-    }
 
-    .best_popular {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
 
     .cards_popular {
         display: flex;
         flex-direction: column;
     }
 
-    .best_popular i {
-        color: #0065fc;
-    }
+
 
     .card_popular_in {
         box-shadow: 3px 3px 3px grey;
@@ -503,32 +572,7 @@ nav a:hover {
 
     }
 
-    
-    .card_popular_in p {
-        margin-block: 0.8rem;
-    }
 
-    .card_popular_in img {
-        width: 45%;
-        border-radius: 16px 0 0 16px;
-        padding: 4px;
-        object-fit: cover;
-        margin-right: 4%;
-    }
-
-    .card_popular_in_solo img {
-        width: 45%;
-        border-radius: 16px 0 0 16px;
-        padding: 4px;
-        object-fit: cover;
-        margin-right: 4%;
-
-    }
-
-
-    .stars {
-        margin-top: 4rem;
-    }
 
 
     /* HEBERGEMENT MARSEILLE */
@@ -537,37 +581,19 @@ nav a:hover {
 
     .card_hebergement {
         box-shadow: 3px 3px 3px gray;
-        width: 80%;
+        width: 100%;
         background-color: white;
         display: flex;
         flex-direction: column;
 
     }
 
-    .card_hebergement img {
-        width: 100%;
-        border-radius: 16px 16px 0px 0px;
-        height: 8rem;
-        padding: 1%;
-    }
-
-    .cards_marseille {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .appartment-list div {
-        border-radius: 16px 16px 16px 16px;
-    }
-
     .city {
-        background-color: #F2F2F2;
-        width: 100%;
-        padding: 16px;
-        margin-bottom: 3rem;
+        background-color: white;
     }
+
+
+
 
     /* MARSEILLE ACTIVITY */
 
