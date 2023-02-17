@@ -14,29 +14,29 @@
     <header>
         <nav>
             <img id="logo" src="images/Booki.png" alt="reservia logo" width="100">
-            <div>
-                <a href="#">Activités</a>
-                <a href="#">Hébergement</a>
+            <div class="wrapper">
+                <span><a href="#">Activités</a></span>
+                <span><a href="#">Hébergement</a></span>
             </div>
         </nav>
     </header>
-    <main class="wrapper">
+    <main>
+        <div class="wrapper">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
 
-        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
 
-        <p>En plein centre ville ou en pleine nature</p>
+            <div class="search-form">
+                <div id="search-icon1"><i class="fa-solid fa-location-dot"></i></div>
+                <input type="text" placeholder="Marseille, France">
+                <button id="search-button">Rechercher</button>
+                <div id="search-icon2"> <i class="fa-solid fa-magnifying-glass"></i> </div>
 
-        <div class="search-form">
-            <div id="search-icon1"><i class="fa-solid fa-location-dot"></i></div>
-            <input type="text" placeholder="Marseille, France">
-            <button id="search-button">Rechercher</button>
-            <div id="search-icon2"> <i class="fa-solid fa-magnifying-glass"></i> </div>
-
+            </div>
         </div>
-
         <!-- FILTERS -->
 
-        <div class="filter-list">
+        <div class="filter-list wrapper">
             <h2>Filtres</h2>
             <div class="filter">
                 <i class="fa-solid fa-money-bill-wave"></i>
@@ -59,7 +59,7 @@
 
         <!-- SEARCH RESULT -->
 
-        <div class="results-message">
+        <div class="results-message wrapper">
             <i class="fas fa-info" aria-hidden></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -161,7 +161,7 @@
 
             </div>
 
-           <!-- MOST POPULAR -->
+            <!-- MOST POPULAR -->
 
 
             <div class="popular">
@@ -230,9 +230,9 @@
 
         <!-- MARSEILLE ACTIVITY -->
 
-        <h3> Activités à Marseille</h3>
+        <h3 class="wrapper"> Activités à Marseille</h3>
 
-        <div class="activity_picture">
+        <div class="activity_picture wrapper">
 
             <div> <img src="images/image.activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                 <p>Vieux-Port</p>

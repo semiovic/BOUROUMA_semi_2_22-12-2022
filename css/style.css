@@ -7,11 +7,9 @@
     font-family: "Raleway", "sans serif";
 }
 
+
 /* RACCOURCI BONUS */
 
-
-
- 
 
 .blue_stars {
     color: #0065fc;
@@ -35,7 +33,7 @@ a {
 }
 
 .wrapper {
-    padding: 15px;
+    padding: 0 20px;
 }
 
 /* NAV BAR */
@@ -48,8 +46,15 @@ nav {
 }
 
 nav a {
-    padding: 20px;
+    padding: 20px 0 0px;
 }
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 
 nav a:hover {
     border-top: 2px solid #0065fc
@@ -115,7 +120,6 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
@@ -136,7 +140,7 @@ nav a:hover {
 
 .filter span {
     font-weight: bold;
-    padding: 1rem;
+    padding: 1rem
 }
 
 /* RESULT MESSAGE */
@@ -163,6 +167,7 @@ nav a:hover {
 .appartment-list {
     display: flex;
     gap: 5rem;
+    padding: 20px;
 }
 
 .text_hebergement {
@@ -172,15 +177,12 @@ nav a:hover {
 }
 
 
-.appartment-list div {
-    border-radius: 16px 16px 16px 16px;
-}
-
 .city {
     background-color: #F2F2F2;
     width: 66%;
-    padding: 16px;
     margin-bottom: 3rem;
+    border-radius: 16px 16px 16px 16px;
+    padding: 16px;
 }
 
 .card_hebergement {
@@ -189,6 +191,7 @@ nav a:hover {
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .card_hebergement img {
@@ -220,6 +223,7 @@ nav a:hover {
     width: 33%;
     padding: 16px;
     margin-bottom: 3rem;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .best_popular {
@@ -252,6 +256,7 @@ nav a:hover {
     background-color: white;
     width: 85%;
     display: flex;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .card_popular_in_solo {
@@ -259,6 +264,7 @@ nav a:hover {
     background-color: white;
     width: 85%;
     display: flex;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .card_popular_in p {
@@ -279,6 +285,7 @@ nav a:hover {
     padding: 4px;
     object-fit: cover;
     margin-right: 4%;
+    max-height: 140px;
 }
 
 /* MARSEILLE ACTIVITY */
@@ -351,6 +358,7 @@ nav a:hover {
     .appartment-list {
         flex-wrap: wrap;
         width: 100%;
+        padding: 20px;
     }
 
     .city {
@@ -375,11 +383,7 @@ nav a:hover {
 
 
     .card_popular_in {
-        box-shadow: 3px 3px 3px grey;
-        background-color: white;
-        width: 85%;
         height: 10rem;
-        display: flex;
     }
 
     .card_popular_in_solo {
@@ -462,6 +466,9 @@ nav a:hover {
 
     nav {
         display: block;
+        padding: 0%;
+        margin-top: 16px;
+        margin-bottom: 32px;
     }
 
     nav img {
@@ -472,13 +479,11 @@ nav a:hover {
 
     nav div {
         display: flex;
-        justify-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        font-size: larger;
     }
 
-
     nav a:hover {
-        border-bottom: 2px solid #0065fc;
         border-top: none;
     }
 
@@ -506,6 +511,10 @@ nav a:hover {
         display: flex;
     }
 
+    .search-form input {
+        flex-grow: 1;
+    }
+
 
 
     /* FILTRE */
@@ -521,7 +530,7 @@ nav a:hover {
 
 
     .filter span {
-        padding: 0%;
+        padding: 0
     }
 
     .filter {
@@ -531,17 +540,20 @@ nav a:hover {
     }
 
 
-    /* RESULTE MSG */
+    /* MOST POPULAR */
 
 
-    .results-message {
-        margin-bottom: 5%;
-        margin-top: 10%;
+    .appartment-list {
+        gap: 0;
+        padding: 0%;
     }
 
 
-    /* MOST POPULAR */
-
+    .popular {
+        order: -1;
+        margin: 0;
+        border-radius: 0%;
+    }
 
     .cards_popular {
         display: flex;
