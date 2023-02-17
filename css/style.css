@@ -8,6 +8,9 @@
 }
 
 /* RACCOURCI BONUS */
+
+
+
  
 
 .blue_stars {
@@ -29,6 +32,10 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+.wrapper {
+    padding: 15px;
 }
 
 /* NAV BAR */
@@ -54,9 +61,6 @@ nav a:hover {
 }
 
 
-.wrapper {
-    padding: 0 2rem;
-}
 
 /* SEARCH-BAR */
 
@@ -409,15 +413,15 @@ nav a:hover {
     }
 
     .stars {
-        margin-top: 30%;
+        margin-top: 35%;
     }
 
     .stars2 {
-        margin-top: 20%;
+        margin-top: 24%;
     }
 
     .stars3 {
-        margin-top: 30%;
+        margin-top: 35%;
     }
 
     /* MARSEILLE ACTIVITY */
@@ -554,6 +558,20 @@ nav a:hover {
         width: 100%;
         display: flex;
     }
+
+    .stars {
+        margin-top: 45%;
+    }
+
+    .stars2 {
+        margin-top: 37%;
+    }
+
+    .stars3 {
+        margin-top: 60%;
+    }
+
+
 
 
     /* HEBERGEMENT MARSEILLE */
