@@ -158,7 +158,7 @@ nav a:hover {
     margin-right: 16px;
 }
 
-/* APPARTMENT LIST */
+/* APPARTMENT LIST/ HEBERGEMENT MARSEILLE */
 
 .appartment-list {
     display: flex;
@@ -183,27 +183,6 @@ nav a:hover {
     margin-bottom: 3rem;
 }
 
-.popular {
-    background-color: #F2F2F2;
-    width: 33%;
-    padding: 16px;
-    margin-bottom: 3rem;
-}
-
-.best_popular {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.best_popular i {
-    color: #0065fc;
-}
-
-
-/* APPARTEMENT CARDS */
-
-
 .card_hebergement {
     box-shadow: 3px 3px 3px gray;
     width: 30%;
@@ -226,14 +205,38 @@ nav a:hover {
     justify-content: center;
 }
 
-.text_popular {
-    margin-bottom: 3%;
-}
-
 .text_hebergement {
     margin-left: 16px;
     margin-bottom: 16px;
 }
+
+
+
+/* MOST POPULAR */
+
+
+.popular {
+    background-color: #F2F2F2;
+    width: 33%;
+    padding: 16px;
+    margin-bottom: 3rem;
+}
+
+.best_popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best_popular i {
+    color: #0065fc;
+}
+
+
+.text_popular {
+    margin-bottom: 3%;
+}
+
 
 .cards_popular {
     display: flex;
