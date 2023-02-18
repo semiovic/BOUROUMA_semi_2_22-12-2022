@@ -38,21 +38,35 @@ a {
 
 /* NAV BAR */
 
+#logo {
+    padding: 20px;
+    width: 100%;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
 }
+
 
 nav a {
     padding: 20px 0 0px;
 }
 
+.text_nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 0%;
+}
+
+
+
 nav div {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
@@ -71,6 +85,7 @@ nav a:hover {
 
 .search-form {
     display: flex;
+    margin-bottom: 16px;
 }
 
 .search-form button {
@@ -239,6 +254,8 @@ nav a:hover {
 
 .text_popular {
     margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -254,25 +271,14 @@ nav a:hover {
 .card_popular_in {
     box-shadow: 3px 3px 3px grey;
     background-color: white;
-    width: 85%;
+    width: 100%;
     display: flex;
     border-radius: 16px 16px 16px 16px;
 }
 
-.card_popular_in_solo {
-    box-shadow: 3px 3px 3px grey;
-    background-color: white;
-    width: 85%;
-    display: flex;
-    border-radius: 16px 16px 16px 16px;
-}
-
-.card_popular_in p {
-    margin-block: 0.8rem;
-}
 
 .card_popular_in img {
-    width: 45%;
+    width: 33%;
     border-radius: 16px 0 0 16px;
     padding: 4px;
     object-fit: cover;
@@ -286,6 +292,11 @@ nav a:hover {
     object-fit: cover;
     margin-right: 4%;
     max-height: 140px;
+}
+
+.stars {
+    display: flex;
+    margin-top: auto;
 }
 
 /* MARSEILLE ACTIVITY */
@@ -323,15 +334,15 @@ nav a:hover {
 .bottom {
     background-color: #F2F2F2;
     display: flex;
-    gap: 12rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    justify-content: center;
+    padding: 20px;
 }
 
-.text_bottom {
-    margin-left: 7rem;
+.all_text_bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
 }
-
 
 
 /* RESPONSIV TABLETTE */
@@ -359,6 +370,7 @@ nav a:hover {
         flex-wrap: wrap;
         width: 100%;
         padding: 20px;
+        gap: 0;
     }
 
     .city {
@@ -383,77 +395,43 @@ nav a:hover {
 
 
     .card_popular_in {
-        height: 10rem;
+        height: 100%;
     }
 
     .card_popular_in_solo {
-        box-shadow: 3px 3px 3px grey;
-        background-color: white;
-        width: 85%;
-        height: 10rem;
-        display: flex;
-    }
-
-
-    .card_popular_in p {
-        margin-block: 0.8rem;
-    }
-
-    .card_popular_in img {
-        width: 45%;
-        border-radius: 16px 0 0 16px;
-        padding: 4px;
-        object-fit: cover;
-        margin-right: 4%;
-    }
-
-    .card_popular_in_solo img {
-        width: 45%;
-        border-radius: 16px 0 0 16px;
-        padding: 4px;
-        object-fit: cover;
-        margin-right: 4%;
+        height: 100%;
     }
 
     .text_popular {
         font-size: small;
+        display: flex;
+        flex-direction: column;
     }
 
     .stars {
-        margin-top: 35%;
-    }
-
-    .stars2 {
-        margin-top: 24%;
-    }
-
-    .stars3 {
-        margin-top: 35%;
+        display: flex;
+        margin-top: auto;
     }
 
     /* MARSEILLE ACTIVITY */
 
-    /* BESOIN D'AIDE IMAGE PAS DE LA MEME TAILLE A CAUSE DES DOUBLE LIGNES TEXT.. */
 
     .activity_picture div {
         height: 15rem;
         font-size: smaller;
     }
 
+    .activity_picture p {
+        font-size: smaller;
+    }
+
 
     /* BOTTOM */
 
-    .bottom {
-        display: flex;
-        justify-content: center;
-        font-size: small;
-        gap: 5rem;
-        margin-right: 3%;
+    .all_text_bottom {
+        gap: 4rem;
     }
 
-    .text_bottom {
-        margin: 0%;
-    }
 }
 
 
@@ -466,10 +444,36 @@ nav a:hover {
 
     nav {
         display: block;
-        padding: 0%;
         margin-top: 16px;
         margin-bottom: 32px;
     }
+
+    .text_nav {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav_text1 {
+        width: 100%;
+        border-bottom: #d9d9d9 solid 2px;
+    }
+
+    .nav_text2 {
+        width: 100%;
+        border-bottom: #d9d9d9 solid 2px;
+
+    }
+
+    .nav_text1 a:hover {
+        border-bottom: #0065fc solid 2px;
+        color: #0065fc;
+        width: 100%;
+
+    }
+
 
     nav img {
         display: flex;
@@ -479,9 +483,12 @@ nav a:hover {
 
     nav div {
         display: flex;
-        justify-content: space-around;
-        font-size: larger;
+        justify-content: center;
+        font-size: 20px;
+        padding: 0%;
+
     }
+
 
     nav a:hover {
         border-top: none;
@@ -574,16 +581,15 @@ nav a:hover {
         display: flex;
     }
 
+    .text_popular {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .stars {
-        margin-top: 45%;
-    }
-
-    .stars2 {
-        margin-top: 37%;
-    }
-
-    .stars3 {
-        margin-top: 60%;
+        margin-top: auto;
+        display: flex;
     }
 
 
@@ -638,13 +644,13 @@ nav a:hover {
     /* BOTTOM */
 
     .bottom {
-        background-color: #F2F2F2;
-        display: block;
-        gap: 12rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        justify-content: flex-start;
     }
 
+    .all_text_bottom {
+        flex-direction: column;
+        gap: 0;
+    }
 
 
 }
