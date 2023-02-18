@@ -442,6 +442,10 @@ nav a:hover {
 
     /* NAV BAR */
 
+    #logo {
+        width: auto;
+    }
+
     nav {
         display: block;
         margin-top: 16px;
@@ -459,21 +463,27 @@ nav a:hover {
     .nav_text1 {
         width: 100%;
         border-bottom: #d9d9d9 solid 2px;
+        padding: 16px;
     }
 
     .nav_text2 {
         width: 100%;
         border-bottom: #d9d9d9 solid 2px;
+        padding: 16px;
 
     }
 
-    .nav_text1 a:hover {
+    .nav_text1:hover {
         border-bottom: #0065fc solid 2px;
-        color: #0065fc;
-        width: 100%;
-
     }
 
+    .nav_text2:hover {
+        border-bottom: #0065fc solid 2px;
+    }
+
+    .text_nav a:hover {
+        color: #0065fc;
+    }
 
     nav img {
         display: flex;
