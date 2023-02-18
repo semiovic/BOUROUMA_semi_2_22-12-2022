@@ -59,8 +59,9 @@ nav {
     padding: 40px;
 
 }
+
 .nav_text1:hover {
-    border-top: #0065fc solid 3px;  
+    border-top: #0065fc solid 3px;
 }
 
 .nav_text2:hover {
@@ -400,6 +401,9 @@ h3 {
 
     /* HEBERGEMENT MARSEILLE */
 
+    .text_hebergement {
+        font-size: small;
+    }
 
     .appartment-list {
         flex-wrap: wrap;
@@ -482,7 +486,8 @@ h3 {
     /* NAV BAR */
 
     #logo {
-        width: auto;
+        width: 25%;
+        padding: 0%;
     }
 
     nav {
@@ -619,6 +624,10 @@ h3 {
         padding: 0;
     }
 
+    .best_popular i {
+        margin-right: 20px;
+    }
+
     .cards_popular {
         display: flex;
         flex-direction: column;
@@ -627,6 +636,10 @@ h3 {
 
 
     /* HEBERGEMENT MARSEILLE */
+
+    #marseille_h3 {
+        padding: 0%;
+    }
 
 
     .card_hebergement {
