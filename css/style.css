@@ -210,7 +210,6 @@ nav a:hover {
 
 .text_hebergement {
     margin: auto;
-    line-height: 1px;
 }
 
 
@@ -481,7 +480,7 @@ h3 {
 
 /* RESPONSIVE PHONE */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
 
 
     /* NAV BAR */
