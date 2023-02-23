@@ -63,10 +63,12 @@ nav {
 
 .nav_text1:hover {
     border-top: #0065fc solid 3px;
+    padding-top: 37px;
 }
 
 .nav_text2:hover {
     border-top: #0065fc solid 3px;
+    padding-top: 37px;
 }
 
 nav a {
@@ -173,6 +175,10 @@ nav a:hover {
     border-radius: 32px;
     display: flex;
     align-items: center;
+}
+
+.filter:hover {
+    background-color: #d9d9d9;
 }
 
 .filter span {
@@ -693,7 +699,7 @@ h3 {
 
     .activity_picture p {
         margin-right: auto;
-        padding: 5px;
+        padding: 16px;
     }
 
     /* BOTTOM */
