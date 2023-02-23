@@ -535,6 +535,7 @@ h3 {
 
     .text_nav a:hover {
         color: #0065fc;
+        padding-top: 0;
     }
 
     nav img {
